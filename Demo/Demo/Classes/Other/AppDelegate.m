@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "JWNavigationViewController.h"
+#import "JWTableViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:JWScreen];
+    self.window.rootViewController = [[JWNavigationViewController alloc] initWithRootViewController:[[JWTableViewController alloc] init]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

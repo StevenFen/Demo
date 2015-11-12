@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  百思不得其姐
+//
+//  Created by fengjiwen on 15/9/1.
+//  Copyright (c) 2015年 fengjiwen. All rights reserved.
+//
+
+#ifndef _______PrefixHeader_pch
+#define _______PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+// 屏幕尺寸
+#define JWScreenH [UIScreen mainScreen].bounds.size.height
+#define JWScreenW [UIScreen mainScreen].bounds.size.width
+#define JWScreen [UIScreen mainScreen].bounds
+#endif
